@@ -8,6 +8,7 @@ A snakemake pipeline to process hsrChST-seq raw data
 ## Dependiencies
 
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html). snakemake is python3
+* [Biopython](https://biopython.org/docs/1.75/api/index.html).
 * [Cell Ranger ATAC](https://support.10xgenomics.com/single-cell-atac/software/pipelines/latest/installation). v1.2
 * [BBMap](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/installation-guide/).
 
@@ -16,7 +17,7 @@ A snakemake pipeline to process hsrChST-seq raw data
 2. Configure Snakefile
 3. Configure cluster.json
 4. Configure Snakemake.sh
-5. Run the pipeline use the command:
+5. To run the pipeline, use the command:
 ```
 sbatch Snakemake.sh
 ```
