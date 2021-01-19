@@ -17,13 +17,13 @@ input_file_R1 = args["input"]
 output_file_R1 = args["output_R1"]
 output_file_R2 = args["output_R2"]
 
-seq_start=99 # !!! should be 99 in real run (8bp BC2 + 30bp linker2 + 8bp BC1 + 34bp linker1 + 19bp ME) (chemV2)
+seq_start=99
 
 bc2_start=0
 bc2_end=8
 
 bc1_start=38
-bc1_end=46 # BC1 is only 7bp in test sample (so bc1_end=45), not real ones
+bc1_end=46
 
 with gzopen(input_file_R1, "rt") as in_handle_R1, open(output_file_R1, "w") as out_handle_R1, open(output_file_R2, "w") as out_handle_R2:
     for title, seq, qual in FastqGeneralIterator(in_handle_R1):
